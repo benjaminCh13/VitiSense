@@ -1,0 +1,53 @@
+* { margin: 0; padding: 0 ; box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body { font-family: thisregular; font-size: 16px; 
+margin: 0; }
+
+.contenedor-nos{ position: relative;  width: 100%; height: auto; }
+.contenedor-nos .contenedor-tit{ position: absolute;  color: white; width: 100%;  top: 50%; left: 50%;  
+	text-align: center; transform: translate(-50%, -50%);  background: rgb(0,0,0);
+	 background: rgba(0,0,0,0.5);  padding: 40px;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Boton contacto PIE DE PAGINA
+.............................................*/
+
+.btn-contacto{ position: relative;  border:none; border-radius:4px; font-size: 20px; padding: 4px;
+ width: 80%; text-align: center; -webkit-transition-duration: 0.4s; background-color: #43bd40; 
+ color: white; font-size: 20px;
+/*safary*/ transition-duration: 0.5s; text-decoration: none; overflow: hidden; cursor: pointer; }
+.btn-contacto:after{content: ""; background: #c9ffc8; display: block;position: absolute;
+padding-top: 300%; padding-left: 350%; margin-left: -20px !important; margin-top: -120%; 
+opacity: 0; transition: all 0.8s;}
+.btn-contacto:hover:after{ padding: 0; margin: 0; opacity: 1; }
+
+
+
+/*botn enviar CONTACTO........................................*/
+
+.btn-enviar{ border-radius: 4px; background-color:  #43bd40; border:none; color: white; 
+  text-align: center; font-size: 20px;  width: 150px; transition: all 0.5s; 
+  cursor: pointer; margin: 5px;  font-weight: bold; padding: 5px;}
+.btn-enviar span{ cursor: pointer; display: inline-block; position: relative;; transition: 0.5s; }
+.btn-enviar span:after{ content: '\00bb'; position: absolute;opacity: 0; top:0; right: -20px;
+ transition: 0.5s; }  
+.btn-enviar:hover span{padding-right: 25px; }
+.btn-enviar:hover span:after{opacity: 1; right: 0;}
+
+
+
+/* PIE DE PAGINA
+--------------------------------------------------------*/
+.pieDePagina a{color: white; }
+.pieDePagina a:hover{ color: #43bd40; }

@@ -1,0 +1,250 @@
+* { margin: 0; padding: 0 ; box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body { font-family: thisregular; font-size: 16px; 
+margin: 0;}
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0; left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content-uvas {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+/*MENU
+.................................................................*/
+#contenedor-menu {
+  overflow: visible;
+  background-color: #333;
+  z-index: 7;
+}
+
+#nav-menu  a {
+  color: white;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+#nav-menu  a:hover {
+  background-color: #a7cdc8;
+  color: black;
+}
+
+#nav-menu .active a {
+  background-color: #a7cdc8;
+  color: #030c04;
+}
+/*Redes sociales*/
+.nav-redesSociales  a {
+  color: white;
+  padding: 14px 14px;
+  font-size: 17px;
+}
+.nav-redesSociales i:hover{  color: #a7cdc8; }
+
+/*termina menu...........................*/
+
+
+
+
+.content-des{ width: 70%; margin: auto; }
+.content-soluciones{ display: flex; text-align: center; margin: auto; }
+.sol-h{ font-weight: bold; }
+
+
+/*SERVICIOS
+...........................................................*/
+/*...............6 servicios..................*/
+.servicio { position: relative;}
+.servicio .mascara {position: absolute;}
+.servicio img {position: relative;}
+.servicio h1 {text-transform: uppercase;  text-align: center; position: relative;
+ padding: 8px; border-bottom-style: solid; border-top-style: solid; border-color: white  ;
+  background: rgb(0,0,0); background: rgba(0,0,0,0.3);}
+.servicio h3 { position: relative; color: white; padding: 10px 20px 10px;
+	text-align: center; background-color: black;}
+
+/**/
+.servicio-img img {
+transition: all 0.2s linear;
+}
+/*.card-body:hover { background-color: #222222; color: white;} para toda la targeta*/
+/*.servicio-card:hover { background-color:  rgba(91,91,91, 0.7); color: white;}*/
+
+/*.mascara:hover { background-color: rgba(91,91,91, 0.7);}*//* solo para la imagen*/
+
+.servicio-img h3 {
+transform: translateX(20px);/*Desplazamos a la derecha*/
+opacity: 0;
+transition: all 0.4s linear;
+}
+.servicio-img:hover h3 {
+opacity: 1;
+transform: translateX(0px);/*Regresamos a las posiciones originales*/
+}
+
+.servicio-img:hover h3 {
+transition-delay: 0.1s;
+}
+.servicio-img:hover {
+transition-delay: 0.6s; /*Aplicamos un pequeño retardo para que se muestre al final*/
+transform: translateY(0px);
+}
+
+
+/*termina*/
+
+/*banner-video*/
+.banner-video{ width: 100%;  position: relative; margin: 0 auto;   }
+.banner-video .play{ position: absolute;  top: 50%; left: 50%;  transform: translate(-50%, -50%); 
+  width: 100%; height: 100%; background: rgb(0,0,0); background: rgba(0,0,0,0.3); align-items: center; display: flex;
+justify-content: center;}
+
+/*linea horizontal con el circulo*/
+.circulo{ position: relative; }
+.circ1{ height: 24px; width: 24px; border-radius: 50%; display: inline-block;
+ background-color: #e7463c; }
+.circ2{position: absolute; top: 2px; height: 20px; width: 20px; border-radius: 50%; 
+    display: inline-block; background-color: white; }
+
+/*circulos seguidos*/
+
+
+.c1{ height: 24px; width: 24px; border-radius: 50%; display: inline-block;
+ background-color: #43bd40; }
+.c2{ height: 16px; width: 16px; border-radius: 50%; 
+    display: inline-block; background-color: #43bd40; }
+.c3{ height: 8px; width: 8px; border-radius: 50%; 
+    display: inline-block; background-color: #43bd40; }
+
+/*Boton contacto PIE DE PAGINA
+.............................................*/
+
+.btn-contacto{ position: relative;  border:none; border-radius:4px; font-size: 20px; padding: 4px;
+ width: 80%; text-align: center; -webkit-transition-duration: 0.4s; background-color: #43bd40; 
+ color: white; font-size: 20px;
+/*safary*/ transition-duration: 0.5s; text-decoration: none; overflow: hidden; cursor: pointer; }
+.btn-contacto:after{content: ""; background: #c9ffc8; display: block;position: absolute;
+padding-top: 300%; padding-left: 350%; margin-left: -20px !important; margin-top: -120%; 
+opacity: 0; transition: all 0.8s;}
+.btn-contacto:hover:after{ padding: 0; margin: 0; opacity: 1; }
+
+
+
+/*botn enviar CONTACTO........................................*/
+
+.btn-enviar{ border-radius: 4px; background-color:  #43bd40; border:none; color: white; 
+  text-align: center; font-size: 20px;  width: 150px; transition: all 0.5s; 
+  cursor: pointer; margin: 5px;  font-weight: bold; padding: 5px;}
+.btn-enviar span{ cursor: pointer; display: inline-block; position: relative;; transition: 0.5s; }
+.btn-enviar span:after{ content: '\00bb'; position: absolute;opacity: 0; top:0; right: -20px;
+ transition: 0.5s; }  
+.btn-enviar:hover span{padding-right: 25px; }
+.btn-enviar:hover span:after{opacity: 1; right: 0;}
+
+
+
+/* PIE DE PAGINA
+--------------------------------------------------------*/
+.pieDePagina a{color: white; }
+.pieDePagina a:hover{ color: #43bd40; }
+
+
+
+@media ( max-width: 992px ){ /*IPAD 768----1024     IPHONE 10 375---812*/
+
+
+.cont-acercad{ margin-bottom: 50px; }
+.objetivo .historia{  left: 20%; top:0px; z-index: 3 }
+
+/*presentacion de servicios y productos*/
+.nosotros-presentacion{ top: 100px; }
+
+}
+
+
+
+
+
+
+@media ( max-width: 768px ){/*  IPAD 6/7/8  365---667         IPONHE PLU 5/6/7  414---736*/
+    body  { font-size: 14px; }
+    a h3 { font-size: 22px; }
+
+/*marco del menu*/
+.navbar-collapse{ border: solid 1px green;}
+
+
+
+.cont-acercad{ margin-bottom: 50px; }
+.objetivo .historia{  left: 6%; top:-30px; z-index: 3 }
+
+/*presentacion de servicios y productos*/
+.nosotros-presentacion{ top: 130px; }
+.nosotros-presentacion .ofrecemos{ position: absolute; left: 1%;  }
+
+/*contacto imagen*/
+.ir-Acontacto{ position: relative; top: 100px; margin-bottom: 220px;}
+
+
+/*contacto cuadro*/
+.ir-Acontacto .ir-Acontacto-borde{ position: absolute; left: 10%; top:-150px; z-index: 3; }
+
+/*linea vertical*/
+.lv{ position: relative; border-left: 2px solid #483e32; height: 100px;  }
+.dot{ position: relative;  color: #483e32;}
+
+.cont-paloma .paloma{  left: 0; top: 25px; }
+}
+
+@media ( max-width: 572px ){/*GALAXI Y MOTO  360 ---640    IPHONE 5/SE 320---568 */
+.objetivo .historia{  left: 6%; top:-30px; z-index: 3 }
+.nosotros-presentacion{ top: 260px; }
+
+
+/*contacto imagen*/
+.ir-Acontacto{ position: relative; top: 250px; margin-bottom: 450px;}
+
+
+/*contacto cuadro*/
+.ir-Acontacto .ir-Acontacto-borde{ position: absolute; left: 10%; top:-130px; z-index: 3; }
+
+/*linea vertical*/
+.lv{ position: relative; border-left: 2px solid #483e32; height: 100px;  }
+.dot{ position: relative;  color: #483e32;}
+}
+
+
+

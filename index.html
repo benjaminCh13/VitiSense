@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>VitiSense</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<script src="https://kit.fontawesome.com/7fd9363817.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="uvas.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<script src="jquery/jquery.js"></script>
+</head>
+<body>
+	<section style="position: relative; height: 100vh; width: 100%;">
+		<video autoplay muted loop id="myVideo">
+	  		<source src="uvas.mp4" type="video/mp4">
+		</video>
+
+			<!-- Optional: some overlay text to describe the video -->
+		<div class="content-uvas">
+			<h1 class="display-3">Sistemas Integrados para tus cultivos</h1>
+			<h3>Conecte todos sus sistemas inalámbricos para tener un  control total sobre la calidad y el rendimiento de sus plantas</h3>
+			  <!-- Use a button to pause/play the video with JavaScript -->
+			<button id="myBtn" onclick="myFunction()">Pause</button>
+		</div>
+	</section>
+
+<!--Menu-->
+	<header class="sticky-top" >
+	<nav id="contenedor-menu" class="navbar  navbar-expand-md navbar-dark  "  >
+		<div class="container">
+			<a href=""><img src="imagenes/logo.png" style="width: 120px;"></a>  
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon" ></span>
+			</button>
+				<div  class=" collapse navbar-collapse" id="navbarNavDropdown"  >
+					<ul id="nav-menu" class="navbar-nav ml-auto" >
+						<li class="nav-item active" >
+							<a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+	      				</li>
+	      				<li class="nav-item ">
+	      					<a class="nav-link" href="#">Nosotros</a>
+	      				</li>
+	      				
+	      				<li class="nav-item dropdown">
+	        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          				Te Brindamos
+	        				</a>
+	        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	        					<a class="dropdown-item" href="#anclaServicios" style="color: black;">Servicios</a>
+					          	<a class="dropdown-item" href="productos.html" target="_blank" style="color: black;">Productos</a>
+					 		</div>
+	      				</li>
+	      				<li class="nav-item">
+	       					<a class="nav-link" href="#">Log in</a>
+	      				</li>
+	    			</ul>
+	    			<div class="nav-redesSociales">
+	      					<a class="h" href=""><i class="fab fa-facebook-square fa-2x" ></i></a>
+	      					<a href=""><i class="fab fa-twitter-square fa-2x" ></i></a>
+	      					<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+	      			</div>
+	  			</div>
+  		</div>
+	</nav>
+	</header>
+<!--termina Menu-->
+
+<main class="piso" style="background-color:white; position: relative; padding-top: 100px;">
+	<section>
+		<div class="row justify-content-center" style="margin-bottom: 70px;">
+			<div class=" col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 " style=" justify-content: center; display: flex; align-items: center; ">
+				<div class="" style="width: 80%; margin: 0 auto;">
+					<h1 style=" font-size: 2.5em; text-align: center; color: #001003;"> <strong>Soluciones</strong>  inalámbricas para optimizar la humedad del suelo y la temperatura de las plantas</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row ">
+				<div class=" col-6  content-soluciones " >
+					<i class="fa fa-wifi fa-4x"></i>
+					<div class="content-des" >
+						<h5 class="sol-h"> Inalámbrico</h5>
+						<p class="sol-p">Los sensores se conectan de forma inalámbrica mediante la conectividad wifi. </p>
+					</div>
+				</div>
+				<div class=" col-6  content-soluciones" >
+					<i class="fa fa-laptop fa-4x"></i>
+					<div class="content-des" >
+						<h5 class="sol-h"> Datos accesibles</h5>
+						<p class="sol-p">Acceda a sus datos del suelo y temperatura con la aplicación web gratuita de VitiSense.</p>
+					</div>
+				</div>
+				<div class="col-6  content-soluciones mt-5"  >
+					<i class="fa fa-tree fa-4x "></i>
+					<div class="content-des" >
+						<h5 class="sol-h ">Para todo tipo de suelo </h5>
+						<p class="sol-p"> Los sensores se puede colocar en todo tipo de suelos. Los datos están calibrados para distintos suelos.</p>
+					</div>
+				</div>
+				<div class="col-6  content-soluciones mt-5"  id="anclaServicios">
+					<i class=" fa fa-user-clock  fa-4x"></i>
+					<div class="content-des" >
+						<h5 class="sol-h">Control 24/7</h5>
+						<p class="sol-p">El monitoreo en vivo las 24 horas del día, los 7 días de la semana proporciona una visión de las condiciones del cultivo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+
+		<div class="row justify-content-center" >
+				<div class=" col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 " style=" justify-content: center; display: flex; align-items: center; ">
+					<div class=" mb-5" style="width: 80%; margin: 0 auto;">
+						<h1 style=" font-size: 2.5em; text-align: center; color: #001003;"> <strong>Nuestros</strong>  Servicios</h1><br>
+						<h3 style=" font-size: 1.5em; text-align: center; color: #001003;"> Con los datos de humedad del suelo y temperatura ambiente, los agrónomos pueden optimizar su tiempo en el campo y obtener el máximo rendimiento</h3>
+					</div>
+				</div>
+		</div>
+
+		<div class="container" >
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+				<div class="col mb-4">
+			    	<div class="card servicio-card " >
+			    		<div class="servicio servicio-img">
+			    			<img src="imagenes/n1.jpg" class="card-img-top " alt="">
+			    			<div class="card-img-overlay mascara">
+			      				<h1 class="card-title text-white ">Agricultura</h1>
+			      				<h3>Integración de soluciones IoT  para reducir el desperdicio de agua en áreas verdes. </h3>
+			    			</div>		      
+			      		</div>
+			      		<div class="card-body">
+			        		<p class="card-text"style=" font-size: 1.5em;"> Demasiada agua en el suelo de las plantas  eliminara los nutrientes, muy poca agua es perjudicial para el crecimiento de los cultivos</p>
+			      		</div>
+			    	</div>
+			  	</div>
+
+			  	<div class="col mb-4">
+			    	<div class="card servicio-card " >
+			    		<div class="servicio servicio-img">
+			    			<img src="imagenes/n2.jpg" class="card-img-top " alt="">
+			    			<div class="card-img-overlay mascara">
+			      				<h1 class="card-title text-white ">Viticultura</h1>
+			      				<h3> Aplicación web gratuita de VitiSense en cualquier momento y en cualquier lugar </h3>
+			    			</div>		      
+			      		</div>
+			      		<div class="card-body">
+			        		<p class="card-text" style=" font-size: 1.5em;">Acceda a las mediciones de humedad del suelo y la temperatura desde su computadora o integrales en tu teléfono inteligente con una API abierta.</p>
+			      		</div>
+			    	</div>
+			  	</div>
+			</div>
+		</div>
+	</section>
+	<section class="container ">
+		<div class="banner-video">
+			<img src="imagenes/vidio.jpg" class="img-fluid" style="width: 100%; height: 400px;">
+			<div class="play">
+				<a href=""><i class="fas fa-play fa-4x  " style="color: red"></i> </a>
+			</div>
+		</div>
+	</section>
+
+	<section class="container pb-5 pt-5">
+		<!-- Linea horizontal y circulo-->
+		<div class=" col-12 col-sm-6 justify-content-center pb-5" style="margin: 0 auto; columns: black;">
+				<h1 style="text-align:  center;">La eficiencia en tus cultivos aumenta con VitiSense</h1>
+				<div style="display: flex; justify-content: center; align-items: center;">
+					<hr style=" border-top: 2px solid #e7463c; width: 150px; margin-right: 20px;">
+					<div class="circulo" style="justify-content: center; display: flex;">	 
+							<span class="circ1"></span>
+							<span class="circ2"></span>
+					</div>
+					<hr style=" border-top: 2px solid #e7463c; width: 150px; margin-left: 20px;">
+				</div>
+		</div>
+
+
+		<div class="row">
+			<div class=" col-6  eficiencia justify-content-center" >
+				<div style="width: 70%; margin: auto; text-align: center;">
+					<h5 class="eficiencia-h">Incrementa hasta el 30% </h5>
+					<i class="fab fa-canadian-maple-leaf fa-4x " style="color:  #1c6d26;"></i>
+					<h5 class="eficiencia-h">En el rendimiento de los cultivos </h5>
+				</div>
+			</div>
+			<div class=" col-6  eficiencia justify-content-center" >
+				<div style="width: 70%; margin: auto; text-align: center;">
+					<h5 class="eficiencia-h"> Reduce al 60%</h5>
+					<i class="fa fa-water fa-4x " style="color: #6a8bb4;"></i>
+					<h5 class="eficiencia-h"> En Irrigación</h5>
+				</div>
+			</div>
+			<div class=" col-6  eficiencia justify-content-center mt-5" >
+				<div style="width: 70%; margin: auto; text-align: center;">
+					<h5 class="eficiencia-h"> Aumenta en un 85%</h5>
+					<i class="fas fa-dollar-sign fa-4x " style="color: #d10437;"></i>
+					<h5 class="eficiencia-h"> Tus ganancias</h5>
+				</div>
+			</div>
+			<div class=" col-6  eficiencia justify-content-center mt-5" >
+				<div style="width: 70%; margin: auto; text-align: center;">
+					<h5 class="eficiencia-h"> Aumente en un 70%</h5>
+					<i class="fas  fa-clock  fa-4x " style="color:#69415d; "></i>
+					<h5 class="eficiencia-h"> En el ahorro de tiempo</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="row col  mt-5">
+			<div class="col-12 text-center">	 
+				<span class="c1"></span>
+			</div>
+			<div class="col-12 text-center">
+				<span class="c2"></span>
+			</div>
+			<div class="col-12 text-center">
+				<span class="c3"></span>
+			</div>
+		</div>
+	</section>
+	
+		
+
+</main>
+<footer>
+
+
+<div class="container-fluid" style="background-color:#111d00; position: relative; ">
+	<div class="container text-white "  >
+		<div class="row "style="background-color: #111d00;">
+	  	<div class="  col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 ">
+		    <div class="col card " style="background-color: #111d00">
+		    	<div class="card-title navbar-nav pieDePagina">
+		    		<h3>Sobre Nosotros</h3>
+		    		<hr style=" border-top: 2px solid #43bd40; width: 65%;">
+		    		<a href="#0" class="nav-link ">Inicio</a>
+		    		<a href="#0" class="nav-link ">Nosotros</a>
+		    		<a href="#0" class="nav-link ">Servicios</a>
+		    		<a href="#0" class="nav-link ">Productos</a>
+		    		
+		    	</div>
+		    </div>
+		</div>
+	    <div class="  col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4  ">
+		    <div class="col card  "style="background-color: #111d00">
+		    	<div class="card-title navbar-nav boton pieDePagina">
+		    		<h3>Contacto</h3>
+		    		<hr style=" border-top: 2px solid #43bd40; width: 60%; ">
+		    		<p> Av. Santa Fe 1234 CABA - Argentina</p>
+		    		<p>info@vitisense.com </p>
+		    		<p>0054-11 223 344</p>
+		    		
+		    		<div style="" >
+			  			<button class="btn-contacto"  >Contactanos</button>  			
+			  		</div>    		
+		    	</div>
+		    </div>
+		</div>
+	    <div class=" col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
+		    <div class="col card" style="background-color: #111d00">
+		    	<h3 style="text-align: center;">Únete a nuestra lista de emails </h3>
+		    	<div class="form-group">
+		    		<label for="email"> Dirección de email</label>
+		    		<input type="email" class="form-control" id="ejemploEmail" aria-describedby=" mi email">
+		    		<small id="ejemploEmail" class="form-text text-muted" >Nunca compartiremos su email con nadie.</small>
+		    		<button type="submit" class="btn-enviar "><span>Enviar</span> </button>
+		    	</div>
+	    	</div>
+	  	</div>
+	  	</div>
+	</div>
+</div>
+<section class="container-fluid">
+	<div class="row">
+		<div class="col p-4 text-center text-white" style="background-color: black;"> <small class="h6">BenjaminCh 2020 © Todos los derechos reservados</small> </div>
+	</div>
+	
+</section>
+
+
+
+</footer>
+
+<script>
+/*..............codigo........................*/
+
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+
+
+
+/* menu
+...........................*/
+
+
+
+/*.............termina...................*/
+	</script>
+
+
+
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
